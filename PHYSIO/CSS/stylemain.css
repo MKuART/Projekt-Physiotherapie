@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+            --hell: #EEE6F3;
+          --akzent: #9C38EB;
+            --back: #B986E1;
+            --font: #14061F;
+       --font-hell: #320E4E;
+}
+body{
+    /* background: linear-gradient(180deg, rgba(20,6,31,0.7020648967551623) 0%, rgba(50,14,78,1) 172%, rgba(255,255,255,1) 177%, rgba(255,255,255,1) 195%); */
+    color: var(--font);
+}
+header{
+    height: 100px;
+/*     width: 100vw; */
+    max-width: 100%;
+    background-color: var(--hell);
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px -1px var(--font-hell),2px 2px 2px var(--akzent);
+    border: var(--aczent) 1px solid;
+    margin: 4px;
+    margin-right: 6px;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.calender{
+    height: 60px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.calander-blatt{
+    height: 40px;
+    width: 85%;
+    background-color: var(--hell);
+    position: relative;
+    border: 2px solid;
+    border-color: var(--akzent);
+    border-radius: 15%;
+    box-shadow: 5px 5px 5px -1px var(--back);
+}
+h3{
+    text-align: center;
+    margin: 8px;
+    color: var(--back);
+    text-shadow: 1px 1px var(--akzent);
+}
+
+.links, .rechts{
+    height: 10px;
+    width: 10px;
+    background-color: var(--hell);
+    position: absolute;
+    top: -6px;
+    border: 2px solid;
+    border-color: var(--akzent);
+    border-radius: 30%; 
+    box-shadow: 2px 2px 2px -1px var(--back);
+}
+.rechts{
+    left: 38px;
+}
+.links{
+    left: 8px; 
+}
+nav ul{
+    list-style-type: none; 
+}
+nav{
+    display: none;
+}
+nav ul li{
+    background-color: #EEE6F3;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    
+}
+#nav-button:checked ~ nav{
+    /* display: none; */
+    display: block;
+    position: absolute;
+    top: 105px;
+    right: 0px;
+    z-index: 2;
+}
+.logo-container{
+    height: 100px;
+    /* background-color:palegreen; */
+}
+.animations-box{
+    background-color: var(--hell);
+    height: 80px;
+    width: 250px;
+    margin: 10px;
+    position: relative;
+    /* border: 1px red solid; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.animation-box span{
+    position: absolute;
+    inset: 5px;
+    background: black;
+    z-index: 1;
+}
+.inset{
+    
+    position: absolute;
+    inset: 2px;
+    background: var(--hell);
+    z-index: 1;
+    border-radius: 10px;
+}
+h1{
+    position: relative;
+    z-index: 1;
+    font-weight: 100;
+    padding-left: 10px;
+    text-decoration: underline;
+    text-decoration-color: var(--font-hell) ;
+}
+.animations-box::before{
+    content: '';
+    height: 80px;
+    width: 200px;
+    background-image: conic-gradient(transparent,transparent,transparent,var(--akzent));
+    position: absolute;
+    transform: translate(50%, 50%);
+    animation: animate 6s linear infinite;
+    scale: 4;
+}
+.animations-box::after{
+    content: '';
+    height: 80px;
+    width: 200px;
+    background-image: conic-gradient(transparent,transparent,transparent,var(--akzent));
+    position: absolute;
+    animation: animate 6s linear infinite ;
+    animation-delay: -2s;
+    scale: 4;
+    animation-fill-mode: forwards;   
+}
+@keyframes animate{
+    0%{   
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg); 
+        
+    }
+}
+
+.burger-container{
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+.burger-menu{
+    background-color: #14061F;
+    height: 5px;
+    width: 50px;
+    padding-top: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px var(--back);
+}
+.burger-menu-weiß{
+    background-color: var(--hell);
+    height: 3px;
+    width: 50px;
+    padding-top: 5px;
+}
+main{
+
+}
+.praxis-pic{
+    height: 400px;
+    max-width: 95%;
+    background-image: 
+        /* linear-gradient(180deg, rgba(238,230,243,0.5886729691876751) 16%, rgba(20,6,31,1) 172%), */
+        linear-gradient(180deg, rgba(238,230,243,0.5886729691876751) 16%, rgba(50,14,78,0.8743872549019608) 172%),
+        url(/pics/praxis.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px var(--back);
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.praxis-pic::before{
+    height: 400px;
+    max-width: 95%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+}
+h2{
+    color: var(--hell);
+    text-shadow: 1px 1px 1px #320E4E;
+}
+p{
+    color: #EEE6F3;
+}
+.text-container{
+    margin-top: 150px;
+}
+.pic-in-pic{
+    background: red;
+}
+
+.box-artikel{
+    background-color: var(--hell);
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+}
+.box-artikel div{
+    height: 100%;
+    width: 350px;
+    border: 1px red solid;
+    background-color: #B986E1;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 3px var(--font-hell);
+    padding: 10px;
+}

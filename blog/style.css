@@ -1,0 +1,33 @@
+html{
+    background-color: azure;
+}
+
+header {
+display: flex;
+align-items: center;
+padding: 20px 50px;
+background-color: #2c3e50;
+color: #fad4d4;
+overflow: hidden;
+}
+header h1 {
+font-size: 72px;
+font-weight: 700;
+overflow: visible;
+}
+video {
+ width: 40%;
+margin: 0 auto;
+}
+footer{
+    background-color: #98b5d1;
+}
+img{
+   height: 200px;
+}
+nav{
+    text-align: right;
+}
+header img{
+    padding: 0;
+}
