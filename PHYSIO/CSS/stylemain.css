@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Great+Vibes&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Great+Vibes&display=swap'); */
 @font-face{
     font-family: 'Great Vibes';
-    src: local('GreatVibes'), url('fonts/GreatVibes-Regular.ttf') format('truetype');
+    src: local('GreatVibes'), url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DMMono-Light';
+    src: url('../fonts/DMMono-Light.ttf') format('truetype');
 }
 *{
     margin: 0;
@@ -11,35 +15,42 @@
             --back: #B986E1;
             --font: #14061F;
        --font-hell: #320E4E;
+       --box-shadow: 2px 6px 23px 3px var(--font-hell);
 }
 /* font-family: 'DM Mono', monospace; */
 body{
     /* background: linear-gradient(180deg, rgba(20,6,31,0.7020648967551623) 0%, rgba(50,14,78,1) 172%, rgba(255,255,255,1) 177%, rgba(255,255,255,1) 195%); */
     color: var(--font);
+    background-color: var(--hell);
 }
 a{
     font-family: 'Great Vibes', cursive;
 }
 header{
     height: 100px;
-    max-width: 100%;
+    width: 100vw;
     background-color: var(--hell);
     border-radius: 20px;
-    box-shadow: 2px 2px 4px -1px var(--font-hell),2px 2px 2px var(--akzent);
+    /* box-shadow: 2px 2px 4px -1px var(--font-hell),2px 2px 2px var(--akzent); */
+    /* box-shadow: 2px 6px 23px 3px var(--font-hell); */
+    box-shadow: var(--box-shadow);
     border: var(--aczent) 1px solid;
     margin: 4px;
-    margin-right: 6px;
+    margin-right: 4px;
 
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .header-in{
     height: 100px;
     max-width: 100%;
     background-color: var(--hell);
     border-radius: 20px;
-    border: 1px red solid;
+/*     border: 1px red solid; */
 }
 .calender{
     height: 40px;
@@ -51,24 +62,24 @@ header{
     margin-top: 25px;
 }
 .calander-blatt{
-    height: 25px;
+    height: 20px;
     width: 85%;
     background-color: var(--hell);
     position: relative;
-    border: 4px solid;
+    border: 3px solid;
     border-color: var(--akzent);
     border-radius: 15%;
     box-shadow: 5px 5px 5px -1px var(--back);
 }
 h3{
     text-align: center;
-    margin: 8px;
+    margin: 1px;
     color: var(--back);
     text-shadow: 1px 1px var(--akzent);
 }
 .links, .rechts{
-    height: 10px;
-    width: 10px;
+    height: 6px;
+    width: 4px;
     background-color: var(--hell);
     position: absolute;
     top: -7px;
@@ -78,10 +89,10 @@ h3{
     box-shadow: 2px 2px 2px -1px var(--back);
 }
 .rechts{
-    left: 36px;
+    left: 13px;
 }
 .links{
-    left: 8px; 
+    left: 1px; 
 }
 nav ul{
     list-style-type: none; 
@@ -146,12 +157,12 @@ a:hover::before{
 .logo-container{
     height: 100px;
     /* background-color:palegreen; */
-    border: 1px red solid;
+    /* border: 1px red solid; */
 }
 .animations-box{
     background-color: var(--hell);
     height: 80px;
-    width: 250px;
+    width: 200px;
     margin: 10px;
     position: relative;
     /* border: 1px red solid; */
@@ -183,9 +194,11 @@ h1{
     z-index: 1;
     font-weight: 100;
     padding-left: 10px;
+    padding-top: 2px;
     text-decoration: underline;
     text-decoration-color: var(--font-hell);
     font-family: 'Great Vibes', cursive;
+    font-size: 1.9rem;
 }
 .animations-box::before{
     content: '';
@@ -221,6 +234,7 @@ h1{
     height: 80px;
     width: 80px;
     margin-top: 20px;
+    margin-left: 10px;
 }
 .burger-menu{
     background-color: #14061F;
@@ -228,16 +242,17 @@ h1{
     width: 40px;
     padding-top: 5px;
     border-radius: 20px;
-    box-shadow: 1px 1px 2px var(--back);
+    box-shadow: 1px 2px 4px var(--back);
 }
 .burger-menu-weiß{
     background-color: var(--hell);
-    height: 2px;
-    width: 40px;
+    height: 1px;
+    width: 0%;
     padding-top: 5px;
 }
 main{
-
+    background-color: var(--hell);
+    margin-top: 110px;
 }
 .praxis-pic{
     height: 300px;
@@ -245,12 +260,12 @@ main{
     background-image: 
         /* linear-gradient(180deg, rgba(238,230,243,0.5886729691876751) 16%, rgba(20,6,31,1) 172%), */
         linear-gradient(180deg, rgba(238,230,243,0.5886729691876751) 16%, rgba(50,14,78,0.8743872549019608) 172%),
-        url(/pics/praxis.jpg);
+        url(/pics/praxis2.jpg);
     margin: 0 auto;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 2px 2px var(--back);
-    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    /* border-radius: 5px; */
     
     display: flex;
     justify-content: start;
@@ -258,6 +273,7 @@ main{
     position: relative;
     padding-bottom: 50px;
     padding-left: 50px;
+
 }
 /* .praxis-pic::before{
     content: '';
@@ -269,10 +285,11 @@ main{
 } */
 h2{
     color: var(--hell);
-    text-shadow: 1px 1px 1px #320E4E;
+    text-shadow: 1px 1px 4px #320E4E;
 }
 p{
     color: #EEE6F3;
+    text-shadow: 1px 1px 4px #320E4E;
 }
 .text-container{
     display: flex;
@@ -280,7 +297,7 @@ p{
     justify-content: start;
     align-items: start;
     text-shadow: 1px 1px #320E4E;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     min-width: 200px;
     margin-right: 250px;
 }
@@ -293,7 +310,7 @@ p{
     background-repeat: no-repeat;
     /* background-color: #9C38EB; */
     position: absolute;
-    z-index: 3;
+    z-index: 0;
     bottom:1px;
     right: 10px;
 }
@@ -307,8 +324,7 @@ p{
 
 .box-artikel{
     background-color: var(--hell);
-    height: 1400px;
-    width: 98%;
+    height: 1300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -316,15 +332,17 @@ p{
     
     padding: 10px;
     padding-bottom: 20px;
-
+    max-width: 96%;
+    margin-bottom: 10px;
 }
 .artikel1, .artikel2, .artikel3{
     height: 400px;
     width: 100%;
     background-color: #EEE6F3;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px 3px var(--font-hell);
-    padding: 10px;
+    /* box-shadow: 5px 5px 17px 4px var(--font-hell); */
+    /* box-shadow: var(--box-shadow); */
+    padding: 8px;
 }
 .artikel1 p{
     color: var(--font);
@@ -336,8 +354,9 @@ p{
     background-position: center;
     height: 300px;
     width: 95%;
-    border-radius: 10px;
-    box-shadow: inset 2px -9px 30px 40px #EEE6F3;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    border: 0;
     display: flex;
     align-items: flex-end;
     
