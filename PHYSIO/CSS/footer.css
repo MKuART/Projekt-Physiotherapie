@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'Great Vibes';
+    src: local('GreatVibes'), url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DMMono-Light';
+    src: url('../fonts/DMMono-Light.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+            --hell: #EEE6F3;
+          --akzent: #9C38EB;
+            --back: #B986E1;
+            --font: #14061F;
+       --font-hell: #320E4E;
+       --box-shadow: 2px 6px 23px 3px var(--font-hell);
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: var(--font);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+
+.footer-nav ul li a{
+    color: var(--hell);
+    font-family: DMMono-Light, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-nav ul{
+    margin-top: 80px;
+}

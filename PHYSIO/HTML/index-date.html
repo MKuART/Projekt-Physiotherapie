@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/mastermain.css">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
-   <!--  <link rel="stylesheet" href="calendar.css"> -->
+    <link rel="stylesheet" href="/CSS/formular.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,7 +16,7 @@
                 <div class="animations-box">
                     <div class="inset"></div>
                     <!-- <span></span> -->
-                    <h1                                 class="font-effect-neon">Michéls<br>Physiotherapie</h1>
+                    <h1 class="font-effect-neon">Michéls<br>Physiotherapie</h1>
                 </div>
             
                 </div>
@@ -54,40 +53,27 @@
         </div>
     </header>
     <main>
-        <div class="praxis-pic">
-            <!-- <img src="/pics/praxis.jpg" class="pic-in-pic" alt=""> -->
-            <div class="text-container">
-                <h2>Herzlich Willkommen<br>in unserer Praxis in Magdeburg</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis iusto fugiat iure obcaecati! Necessitatibus itaque deserunt quidem veritatis in ea eveniet modi,labore eos! Incidunt eum id dignissimos pariatur possimus?</p>
-            </div>
-            <div class="portrai"></div>
-        </div>
-        <section class="box-artikel">
-            <div class="artikel1">
-                <div class="massagen">
-                    <h4>Massagen</h4>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem temporibus fugiat porro rem molestiae accusantium itaque, illum eos. Maiores amet maxime, quas laborum asperiores obcaecati ducimus soluta eius nisi.</p>
-            </div>
-            <div class="artikel2">
-                <div class="ultraschall">
-                    <h4>Ultraschall</h4>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem temporibus fugiat porro rem molestiae accusantium itaque, illum eos. Maiores amet maxime, quas laborum asperiores obcaecati ducimus soluta eius nisi.</p>
-            </div>
-            <div class="artikel3">
-                <div class="krankengymnastik">
-                     <!-- spalte ist zu groß --> 
-                    <h4>Kranken-<br>gymnastik</h4>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorem temporibus fugiat porro rem molestiae accusantium itaque, illum eos. Maiores amet maxime, quas laborum asperiores obcaecati ducimus soluta eius nisi.</p>
-            </div>
-        </section>
+        <form action="" method="post">
+            <label for="Name">Vor- und Zuname</label>
+            <input type="text" placeholder="Max Mustermann">
+            <label for="telefon">Telefon</label>
+            <input type="tel" placeholder="0157123...">
+            <label for="terminwunsch">Terminwunsch</label>
+            <input type="text" placeholder="23.10.2033 Uhrzeit">
+            <textarea name="anliegen" id="text-lang" cols="30" rows="10" placeholder="Vorstellungen, Wünsche, ..." ></textarea>
+            <label for="">Anliegen</label>
+            <input type="text" placeholder="z.B. Beschwerden, Schmerzen, ...">
+            <label for="heilmittel">Welches Heilmittel wurde ihnen verordnet</label>
+            <input type="text" placeholder="z.B. Preparat + Name">
+            <input type="checkbox">
+            <label for="agb">AGB Bestätigung</label>
+            <button type="submit">Abschicken</button>
+
+        </form>
     </main>
     <footer>
         <div class="footer-logo">
 
-                
         </div>
         <div class="footer-nav">
             <ul>
@@ -102,6 +88,5 @@
             </ul>
         </div>
     </footer>
-    
 </body>
 </html>

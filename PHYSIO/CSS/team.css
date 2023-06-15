@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Great Vibes';
+    src: local('GreatVibes'), url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DMMono-Light';
+    src: url('../fonts/DMMono-Light.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+            --hell: #EEE6F3;
+          --akzent: #9C38EB;
+            --back: #B986E1;
+            --font: #14061F;
+       --font-hell: #320E4E;
+       --box-shadow: 2px 6px 23px 3px var(--font-hell);
+}
+main{
+    height: 500px;
+    width: 100%;
+    background-color: var(--hell);
+    margin-top: 110px;
+}
+.praxis-pic{
+    height: 300px;
+    width: 100%;
+    background-image: 
+        /* linear-gradient(180deg, rgba(238,230,243,0.5886729691876751) 16%, rgba(20,6,31,1) 172%), */
+        linear-gradient(180deg, rgba(238,230,243,0.5886729691876751) 16%, rgba(50,14,78,0.8743872549019608) 172%),
+        url(/pics/praxis2.jpg);
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: var(--box-shadow);
+    /* border-radius: 5px; */
+    
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    position: relative;
+    padding-bottom: 50px;
+}
+.footer-logo{
+    height: 300px;
+    width: 100vw;
+    border: 1px red solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+.employees{
+    height: 170px;
+    width: 19.2%;
+    background-color: var(--akzent);
+    border-radius: 3px 3px 10px 10px;
+}
+.employees-pic1{
+    height: 100px;
+    width: 90%;
+    border: 1px red solid;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
