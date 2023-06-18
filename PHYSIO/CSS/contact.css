@@ -16,29 +16,8 @@
        --font-hell: #320E4E;
        --box-shadow: 2px 6px 23px 3px var(--font-hell);
 }
-footer{
-    height: 400px;
+main{
+    height: 800px;
     width: 100%;
-    background-color: var(--font);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    box-shadow: 2px 5px 2px 2px var(--font-hell);
-}
-
-
-.footer-nav ul li a{
-    color: var(--hell);
-    font-family: DMMono-Light, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    cursor: pointer;
-}
-.footer-nav ul{
-    margin-top: 80px;
+    background-color: #B986E1;
 }

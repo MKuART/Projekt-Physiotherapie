@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/formular.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
+    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
     <title>Document</title>
 </head>
 <body>
@@ -53,28 +54,28 @@
         </div>
     </header>
     <main>
-        <form action="" method="post">
-            <label for="Name">Vor- und Zuname</label>
-            <input type="text" placeholder="Max Mustermann">
-            <label for="telefon">Telefon</label>
-            <input type="tel" placeholder="0157123...">
-            <label for="terminwunsch">Terminwunsch</label>
-            <input type="text" placeholder="23.10.2033 Uhrzeit">
-            <textarea name="anliegen" id="text-lang" cols="30" rows="10" placeholder="Vorstellungen, Wünsche, ..." ></textarea>
-            <label for="">Anliegen</label>
-            <input type="text" placeholder="z.B. Beschwerden, Schmerzen, ...">
-            <label for="heilmittel">Welches Heilmittel wurde ihnen verordnet</label>
-            <input type="text" placeholder="z.B. Preparat + Name">
-            <input type="checkbox">
-            <label for="agb">AGB Bestätigung</label>
-            <button type="submit">Abschicken</button>
-
-        </form>
+        <div class="text-map">
+            <div class="contact-box">
+                
+            </div>
+      
+            <div id="map" style="width:300px;height:300px;background:green"></div>  
+                <script>  
+                    function Map123() {  
+                    var mapOptions = {  
+                    center:new google.maps.LatLng(51.508742,-0.120850),  
+                    zoom: 10,  
+                    mapTypeId: google.maps.MapTypeId.HYBRID  
+                    }  
+                    var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+                    }  
+                </script>  
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=Map123"></script>  
+            </div>
+        </div>
     </main>
     <footer>
-        <div class="footer-logo">
-
-        </div>
+        
         <div class="footer-nav">
             <ul>
                 <LI><a href="">Kontakt</a></LI>
@@ -88,5 +89,6 @@
             </ul>
         </div>
     </footer>
+    
 </body>
 </html>

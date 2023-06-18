@@ -136,6 +136,7 @@ a:hover::before{
     border-radius: 0%;
     margin-left: 0px;
 }
+
 #nav-button:checked ~ nav{
     /* display: none; */
     display: block;
@@ -143,6 +144,9 @@ a:hover::before{
     top: 105px;
     right: 0px;
     z-index: 2;
+}
+#nav-button{
+    display: none;
 }
 .logo-container{
     height: 100px;

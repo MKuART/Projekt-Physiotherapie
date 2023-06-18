@@ -44,22 +44,89 @@ main{
 .footer-logo{
     height: 300px;
     width: 100vw;
-    border: 1px red solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3px;
 }
 .employees{
-    height: 170px;
+    height: 180px;
     width: 19.2%;
-    background-color: var(--akzent);
+    background-color: rgba(140, 0, 255, 0.07);
+    backdrop-filter: blur(10px);
     border-radius: 3px 3px 10px 10px;
+    box-shadow: 1px 1px 8px 1px var(--hell) inset;
+}
+.employees h5,.employees p{
+    padding-left: 5px;
 }
 .employees-pic1{
     height: 100px;
     width: 90%;
-    border: 1px red solid;
+    background-image: url(/pics/Team/Mitarbeiter001.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-top: 5px;
+}
+.employees-pic2{
+    height: 100px;
+    width: 90%;
+    background-image: url(/pics/Team/Mitarbeiter002.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.employees-pic3{
+    height: 100px;
+    width: 90%;
+    background-image: url(/pics/Team/Mitarbeiter003.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.employees-pic4{
+    height: 100px;
+    width: 90%;
+    background-image: url(/pics/Team/Mitarbeiter004.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.employees-pic5{
+    height: 100px;
+    width: 90%;
+    background-image: url(/pics/Team/Chefin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+h5{
+    font-size: 0.6rem;
+    padding: 2px;
+}
+.employees p{
+    font-size: 0.5rem;
+    padding: 2px;
+}
+.team-pic{
+    height: 400px;
+    width: 100%;
+    background-image: url(/pics/Team/Team.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
-    <link rel="stylesheet" href="/CSS/team.css">
+    <link rel="stylesheet" href="/CSS/formular.css">
     <title>Document</title>
 </head>
 <body>
@@ -53,23 +53,31 @@
         </div>
     </header>
     <main>
-        <div class="praxis-pic">
-            <div class="footer-logo">
-                <div class="employees">
-                    <div class="employees-pic1">
-                        
-                    </div>
-                </div>
-                <div class="employees"></div>
-                <div class="employees"></div>
-                <div class="employees"></div>
-                <div class="employees"></div>
+        <form action="" method="post">
+            <div class="data-box">
+                <label for="Name">Vor- und Zuname</label><br>
+                <input type="text" id="name" placeholder="Max Mustermann"><br>
+                <label for="telefon">Telefon</label><br>
+                <input type="tel" id="tel" placeholder="0157123..."><br>
+                <label for="terminwunsch">Terminwunsch</label><br>
+                <input type="text" id="text" placeholder="Datum/Tageszeit"><br>
+                <p>Ihre weiteren Anliegen</p>
+                <textarea name="anliegen" id="text-lang" cols="30" rows="10" placeholder="Vorstellungen, Wünsche, ..." ></textarea><br>
+                <label for="">Ihre Diagnose/verordnung</label><br>
+                <input type="text" id="text2" placeholder="z.B. Beschwerden, Schmerzen, ..."><br>
+                <label for="heilmittel">Welches Heilmittel wurde ihnen verordnet</label><br>
+                <input type="text" id="text3" placeholder="z.B. Preparat + Name"><br>
+                <label for="agb">AGB Bestätigung</label><br>
+                <input type="checkbox" id="cechbox">Ja,ich  bestätige bla bla<br>
+                
+                <button type="submit">Abschicken</button>
             </div>
-        </div>
-
+        </form>
     </main>
     <footer>
-        
+        <div class="footer-logo">
+
+        </div>
         <div class="footer-nav">
             <ul>
                 <LI><a href="">Kontakt</a></LI>
