@@ -17,7 +17,47 @@
        --box-shadow: 2px 6px 23px 3px var(--font-hell);
 }
 main{
-    height: 800px;
+    height: 975px;
     width: 100%;
-    background-color: #B986E1;
+    background-color: var(--hell);
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-box1{
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+.contact-box2{
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    gap: 0px 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.adress{
+    height: 300px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+#map{
+    margin: 0 auto;
+    margin-top: 20px;  
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+@media(min-width: 641px){
+    #map{
+        margin-top: 0px;
+    }
+    main{
+        height: 650px;
+    }
 }

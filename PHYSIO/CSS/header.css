@@ -14,18 +14,20 @@
             --back: #B986E1;
             --font: #14061F;
        --font-hell: #320E4E;
-       --box-shadow: 2px 6px 23px 3px var(--font-hell);
+       --box-shadow: 2px 4px 8px 3px var(--font-hell);
+}
+body{
+    background-color: var(--hell);
 }
 header{
     height: 100px;
     width: 100vw;
     background-color: var(--hell);
-    border-radius: 20px;
+    border-radius: 0px 0px 20px 20px;
     /* box-shadow: 2px 2px 4px -1px var(--font-hell),2px 2px 2px var(--akzent); */
     /* box-shadow: 2px 6px 23px 3px var(--font-hell); */
     box-shadow: var(--box-shadow);
     border: var(--aczent) 1px solid;
-    margin: 4px;
     margin-right: 4px;
 
     display: flex;
