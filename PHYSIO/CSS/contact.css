@@ -20,7 +20,6 @@ main{
     height: 975px;
     width: 100%;
     background-color: var(--hell);
-    margin-top: 110px;
     display: flex;
     flex-direction: column;
 }
@@ -60,4 +59,9 @@ main{
     main{
         height: 650px;
     }
+}
+h6{ 
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5px;
 }
