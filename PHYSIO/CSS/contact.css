@@ -14,7 +14,7 @@
             --back: #B986E1;
             --font: #14061F;
        --font-hell: #320E4E;
-       --box-shadow: 2px 6px 23px 3px var(--font-hell);
+       --box-shadow: 2px 4px 8px 3px var(--font-hell);
 }
 main{
     height: 975px;

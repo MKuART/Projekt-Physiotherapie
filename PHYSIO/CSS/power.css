@@ -1,0 +1,59 @@
+@font-face{
+    font-family: 'Great Vibes';
+    src: local('GreatVibes'), url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DMMono-Light';
+    src: url('../fonts/DMMono-Light.ttf') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+            --hell: #EEE6F3;
+          --akzent: #9C38EB;
+            --back: #B986E1;
+            --font: #14061F;
+       --font-hell: #320E4E;
+       --box-shadow: 2px 4px 8px 3px var(--font-hell);
+}
+main{
+    display: flex;
+    margin-top: 110px;
+    flex-wrap: wrap;
+}
+.power1{
+    flex-basis: 350px;
+    flex-grow: 1;
+    height: 400px;
+    background-color: var(--hell);
+    margin: 10px;
+    margin-top: 5px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+.power-text{
+    height: 380px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 9px;
+}
+.power-pic1{
+    background-image: url(/pics/Gesundheit/Leistung004.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    display: flex;
+    align-items: flex-end;
+}
+h4{
+    display: block;
+    margin-bottom: 35px;
+    margin-left: 15px;
+    font-size: 3rem;
+    color: var(--hell);
+    text-shadow: 2px 2px 3px var(--font-hell);
+}
