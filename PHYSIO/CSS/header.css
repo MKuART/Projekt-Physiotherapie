@@ -255,10 +255,10 @@ h1{
         flex-grow: 1;
         flex-
     }
-/*     nav ul{
+    nav ul{
         display: flex;
         justify-content: center;
-    } */
+    }
     nav ul li a::before{
         display: none;
     }
@@ -267,7 +267,7 @@ h1{
     }
     .platzhalter{
         display: block;
-        border: 1px red solid;
+        /* border: 1px red solid; */
     }
 
 }

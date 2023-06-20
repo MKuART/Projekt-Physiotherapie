@@ -49,6 +49,78 @@ main{
     display: flex;
     align-items: flex-end;
 }
+.power-pic2{
+    background-image: url(/pics/Gesundheit/Leistung005.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    display: flex;
+    align-items: flex-end;
+}
+.power-pic3{
+    background-image: url(/pics/Gesundheit/Leistung006.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    display: flex;
+    align-items: flex-end;
+}
+.power-pic4{
+    background-image: url(/pics/Gesundheit/Leistung007.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    display: flex;
+    align-items: flex-end;
+}
+.power-pic5{
+    background-image: url(/pics/Gesundheit/Leistung005.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    display: flex;
+    align-items: flex-end;
+}
+.power-pic6{
+    background-image: url(/pics/Gesundheit/Leistung008.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    display: flex;
+    align-items: flex-end;
+}
+.power-pic7{
+    background-image: url(/pics/Gesundheit/Leistung009.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 95%;
+    /* border-radius: 10px; */
+    box-shadow: inset 2px -9px 10px 40px #EEE6F3;
+    display: flex;
+    align-items: flex-end;
+}
 h4{
     display: block;
     margin-bottom: 35px;
