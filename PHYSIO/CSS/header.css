@@ -6,10 +6,7 @@
     font-family: 'DMMono-Light';
     src: url('../fonts/DMMono-Light.ttf') format('truetype');
 }
-@font-face {
-    font-family: 'Comfortaa';
-    src: url('../fonts/Comfortaa-VariableFont_wght.ttf) format('truetype');
-}
+
 *{
     margin: 0;
     padding: 0;
