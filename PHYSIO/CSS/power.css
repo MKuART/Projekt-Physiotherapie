@@ -22,7 +22,7 @@ main{
     margin-top: 10px;
 }
 .power1{
-    flex-basis: 350px;
+    width: 350px;
     flex-grow: 1;
     height: 400px;
     background-color: var(--hell);
@@ -30,6 +30,11 @@ main{
     margin-top: 5px;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
+}
+@media(min-width: 601px){
+    .power1{
+        width: 500px;
+    }
 }
 .power-text{
     height: 380px;
